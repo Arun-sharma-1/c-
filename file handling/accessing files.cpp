@@ -1,4 +1,5 @@
-#include<iostream>
+ #include<iostream>
+#include<fstream>
 using namespace std;
 int main(){
   
@@ -12,9 +13,13 @@ int main(){
    }  
 //   myfile<<"hello world";
 //   myfile.seekg(6,ios::beg);
-   char A[54];
-   myfile.read(A,5);
-   A[53]=0;
+  f<<"hello world"; // --> giving input to "blank" 
+ f.seekg(6,ios::beg);
+//   char A[54];
+//   myfile.read(A,5);
+//   A[53]=0;
+string A;
+ f>>A; // taking input from file 
    cout<<A<<endl;
   	
 }
