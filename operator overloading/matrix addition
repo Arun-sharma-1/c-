@@ -19,7 +19,7 @@ class Matrix{
                 res.arr[i][j] = arr[i][j]+b.arr[i][j];
             }
         }
-
+//return res( a.arr[i][j]+b.arr[i][j]);  this will not work because it will return only one value 
         return res;
     }
 
